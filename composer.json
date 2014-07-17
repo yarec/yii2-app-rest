@@ -1,5 +1,5 @@
 {
-	"name": "yiisoft/yii2-app-rest",
+	"name": "yarec/yii2-app-rest",
 	"description": "Yii 2 Basic Application Template",
 	"keywords": ["yii2", "framework", "basic", "application template"],
 	"homepage": "http://www.yiiframework.com/",
@@ -10,7 +10,7 @@
 		"forum": "http://www.yiiframework.com/forum/",
 		"wiki": "http://www.yiiframework.com/wiki/",
 		"irc": "irc://irc.freenode.net/yii",
-		"source": "https://github.com/yiisoft/yii2"
+		"source": "https://github.com/yarec/yii2"
 	},
 	"minimum-stability": "dev",
 	"require": {
