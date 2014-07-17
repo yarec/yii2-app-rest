@@ -10,7 +10,7 @@ return [
 
 /*
 CREATE TABLE `xuser` (
-    `id` VARCHAR(20) NOT NULL,
+    `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
     `first_name` VARCHAR(30) NULL DEFAULT NULL,
     `last_name` VARCHAR(30) NULL DEFAULT NULL,
     `email` VARCHAR(30) NULL DEFAULT NULL,
