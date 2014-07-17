@@ -11,4 +11,10 @@ class XuserController extends ActiveController
         'class' => 'yii\rest\Serializer',
         'collectionEnvelope' => 'items',
     ];
+
+    public function actionSearch($keyword) {
+        #$result = SolrService::search($keyword);
+        $result = ['x'=>1,'y'=>2];
+        return $result;
+    }
 }

@@ -4,6 +4,10 @@ namespace app\models;
 
 use Yii;
 
+use yii\web\Link;
+use yii\web\Linkable;
+use yii\helpers\Url;
+
 /**
  * This is the model class for table "xuser".
  *
@@ -16,8 +20,15 @@ use Yii;
  * @property integer $is_active
  * @property string $pass
  */
-class Xuser extends \yii\db\ActiveRecord
+class Xuser extends \yii\db\ActiveRecord implements Linkable
 {
+    public function getLinks()
+    {
+        return [
+            Link::REL_SELF => Url::to(['user', 'id' => $this->id], true),
+        ];
+    }
+
     /**
      * @inheritdoc
      */
